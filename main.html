@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Basile | English Classes</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --muted: #cbd5e1;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --border: rgba(255,255,255,0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+      padding: 48px 0 24px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 60ch;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); opacity: 0.95; }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #082f49;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin: 28px 0;
+    }
+
+    ul.checks {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    ul.checks li {
+      margin-bottom: 12px;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    ul.checks li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--accent-2);
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+    }
+
+    .contact p,
+    .about p {
+      margin: 10px 0;
+      color: var(--muted);
+    }
+
+    .contact strong,
+    .about strong {
+      color: var(--text);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 12px 0 36px;
+      font-size: 0.95rem;
+    }
+
+    .small-note {
+      font-size: 0.95rem;
+      color: #bbf7d0;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 820px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <div class="badge">English Classes · Conversation · Professional English</div>
+        <h1>English Classes with Christian Basile</h1>
+        <p class="subtitle">
+          Private English lessons for students and professionals. Conversation, pronunciation,
+          interviews, presentations, and academic or technical English.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/15854902017" target="_blank">WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:christian.daniel.basile@gmail.com">Email</a>
+        </div>
+        <p class="small-note">First 20 minutes free to evaluate your level and goals.</p>
+      </div>
+
+      <div class="card about">
+        <h2 class="section-title">About Me</h2>
+        <p><strong>Hi!</strong> My name is Christian. I’m Argentine and I lived and studied in the United States for many years.</p>
+        <p>I also worked in <strong>chemical engineering, data science, and the pharmaceutical industry</strong>, so I can help with professional, academic, and technical English too.</p>
+        <p>Classes are available <strong>online or in person in Buenos Aires</strong>.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2 class="section-title">Español</h2>
+        <p>
+          Hola! Mi nombre es Christian. Soy argentino y viví y estudié en Estados Unidos durante muchos años.
+          Ofrezco clases particulares de inglés para estudiantes y profesionales.
+        </p>
+        <p>
+          También trabajé en ingeniería química, ciencia de datos y la industria farmacéutica,
+          por lo que puedo ayudar con inglés académico y técnico.
+        </p>
+        <ul class="checks">
+          <li>Inglés conversacional</li>
+          <li>Pronunciación y confianza al hablar</li>
+          <li>Inglés para trabajo, entrevistas y presentaciones</li>
+          <li>Inglés técnico y académico (ciencia, ingeniería, investigación)</li>
+          <li>Clases personalizadas según tus objetivos</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">English</h2>
+        <p>
+          Hi! My name is Christian. I’m Argentine and lived and studied in the United States for many years.
+          I offer private English lessons for students and professionals.
+        </p>
+        <p>
+          I have also worked in chemical engineering, data science, and the pharmaceutical industry,
+          so I can help with academic and technical English.
+        </p>
+        <ul class="checks">
+          <li>Conversational English</li>
+          <li>Pronunciation and speaking confidence</li>
+          <li>English for work, interviews, and presentations</li>
+          <li>Academic / technical English (science, engineering, research)</li>
+          <li>Personalized lessons depending on your goals</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card contact">
+      <h2 class="section-title">Contact</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/15854902017" target="_blank" style="color:#7dd3fc;">+1 585 490 2017</a></p>
+      <p><strong>Email:</strong> <a href="mailto:christian.daniel.basile@gmail.com" style="color:#7dd3fc;">christian.daniel.basile@gmail.com</a></p>
+      <p><strong>Format:</strong> Online or in person in Buenos Aires</p>
+      <p><strong>Intro session:</strong> First 20 minutes free</p>
+    </section>
+
+    <div class="footer">
+      Christian Basile · English Classes · Buenos Aires
+    </div>
+  </div>
+</body>
+</html>
